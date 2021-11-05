@@ -1,0 +1,93 @@
+:root {
+    --dark-bg-color: rgb(25,25,25); /* 暗い黒色 */
+    --bright-bg-color: rgb(46,51,58); /* 明るい黒色 */
+    --a-tag-blue: rgb(101,153,238); /* リンク用の青色 */
+    --text-white: rgb(175,186,198); /* 暗い白色 */
+    --snow-white: rgb(255,250,250); /* 明るい白色 */
+    --border-color: rgb(70,76,85); /* 枠線の色 */
+}
+
+* {
+    background-color: var(--dark-bg-color) !important; /* 背景色 */
+    border-color: var(--border-color) !important; /* 枠線の色 */
+    color: var(--text-white) !important; /* 文字色 */
+}
+
+#system, .back_l, .back_r {
+    height: 26px !important; /* 授業支援システムの画像を隠す */
+}
+
+a {
+    color: var(--a-tag-blue) !important; /* リンクの文字色 */
+}
+
+a.tooltip {
+    color: var(--text-white) !important; /* 教員名の文字色 */
+}
+
+h2, h3 {
+    background-color: var(--bright-bg-color) !important; /* 見出しの背景 */
+}
+
+input {
+    background-color: var(--bright-bg-color) !important; /* ボタンの背景色 */
+    border: 0.5px solid var(--border-color) !important; /* ボタンの枠線 */
+}
+
+.cs_hideVox_left, .cs_hideVox_center > a, .cs_hideVox_right, .cs_hideVox_right2 {
+    background-color: var(--bright-bg-color) !important; /* 課題タブの背景色 */
+    color: var(--text-white) !important;
+}
+
+.label {
+    background-color: var(--bright-bg-color) !important; /* 「お知らせ」の背景色 */
+}
+
+span, span > img, span > a {
+    background-color: var(--bright-bg-color) !important; /* 「一覧表示・仮登録」ボタンの背景色 */
+}
+
+.highLite {
+    background-color: var(--dark-bg-color) !important; /* 検索条件の文字の背景色 */
+}
+
+.cs_taOpen, .cs_taClose, .cs_taReady, .cs_taExtend {
+    color: var(--snow-white) !important; /* 公開状況のステータス文字色 */
+}
+
+p.box06 {
+    background-color: var(--bright-bg-color) !important; /* 課題説明の背景色 */
+}
+
+/* 講義・コミュニケーション・学習成果管理 */
+#cat006, #cat008, #CAT_CUST002_002 {
+    background: none !important; /* 背景のテクスチャ削除 */
+    background-color: var(--dark-bg-color) !important; /* 背景色 */
+    border: 1px solid var(--border-color) !important; /* 左右の枠線を追加 */
+}
+
+/* 講義・コミュニケーション・学習成果管理 */
+.item_selected > a {
+    background-color: var(--bright-bg-color) !important; /* 選択タブの背景色 */
+}
+
+/* 選択された「〜別に表示する」タブ */ 
+.tab_active {
+    background: none !important; /* 背景のテクスチャ削除 */
+    background-color: var(--bright-bg-color) !important; /* 背景色 */
+}
+
+/* 講義・コミュニケーション・学習成果管理 */
+#side_menu > .top {
+    background: none !important; /* 太い白線を削除 */
+}
+
+#stage {
+    background: none !important; /* 無駄な背景を削除 */
+}
+
+canvas {
+    background-color: var(--dark-bg-color) !important;
+    height: 600 !important;
+    width: 100% !important;
+}

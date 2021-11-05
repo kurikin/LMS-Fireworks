@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "LMS-Fireworks",
+  "version": "1.0.0",
+  "author": "kurikin",
+  "content_scripts": [
+    {
+      "matches": [
+          "https://lms.ynu.ac.jp/lms/rptsRptc/entryReport",
+          "https://lms.ynu.ac.jp/lms/quesQuec/entryEnquete"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+      ]
+    }
+  ]
+}
